@@ -18,7 +18,7 @@
 		la $s1, str # lade adresse von str in $s1 
 		lb $s5, ($s1) # $s5 = str[$s1]
 		lb $s6, ($s0) # $s6 = str[$s0]
-		jal erzwinge_grossschreibung # ziehe 30 ab wenn nötig
+		jal erzwinge_grossschreibung # ziehe 32 ab wenn nötig
 	testschleife:
 		jal endetest # pointer überlaufen sich ? -> ende
 		jal sonderzeichentest # testet auf sonderzeichen und verändert pointer entsprechend
